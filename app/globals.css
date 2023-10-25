@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply w-screen h-full text-dark bg-white;
+}
+.link {
+  @apply font-roboto text-dark capitalize font-normal hover:border-b-4 hover:border-b-light transition pb-1;
+}
+
+.link-active {
+  @apply font-roboto text-dark capitalize font-normal border-b-4 border-b-primary transition pb-1;
+}
+
+.custom-clip-path {
+  height: 50vh;
+  clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+
+}
+.h1 {
+  @apply text-h1 font-bold font-roboto;
+}
+.h2 {
+  @apply text-h2 font-poppins font-normal;
+}
+
+.btn {
+  @apply bg-primary  rounded text-white capitalize font-normal hover:bg-hover;
+}
+
+.btn-1 {
+  @apply px-4 py-2;
+}
+
+.btn-2 {
+  @apply py-[1rem] px-[4rem] ;
+}
+
