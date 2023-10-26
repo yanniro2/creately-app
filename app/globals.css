@@ -37,4 +37,7 @@ body {
 .btn-2 {
   @apply py-[1rem] px-[4rem] ;
 }
+.btn-3 {
+  @apply px-6 py-2 bg-dark w-max hover:bg-blue-500 transition;
+}
 
