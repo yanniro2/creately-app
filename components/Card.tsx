@@ -36,11 +36,9 @@ const Card = () => {
               alt="card img"
               className=" object-cover"
             />
-            <h1 className="text-h2 font-bold">{data.label}</h1>
+            <h1 className="h3">{data.label}</h1>
 
-            <p className="text-light font-light text-h3 font-roboto">
-              {data.details}
-            </p>
+            <p className="p-body">{data.details}</p>
 
             <button className="btn btn-3 ">get started</button>
           </div>
