@@ -6,7 +6,15 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  safelist: ["border-r-primary", "border-r-light"],
+  important: true,
+  safelist: [
+    "border-r-primary",
+    "border-r-light",
+    "text-disabled",
+    "bg-disabled",
+    "text-dark",
+    "bg-dark",
+  ],
   theme: {
     extend: {
       colors: {
