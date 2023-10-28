@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import Animation from "./Animation";
 const Hero = () => {
   const sections = [
     { label: "Infinite Visual Canvas", icon: "/Assets/icon_1.svg" },
@@ -17,13 +17,14 @@ const Hero = () => {
         alt="img bg"
         className="w-screen h-screen object-cover absolute top-0 left-0 right-0 bottom-0 z-5"
       />
-      <Image
+      {/* <Image
         src="/Assets/animation_vector.svg"
         width={800}
         height={800}
         alt="img bg"
         className="w-auto h-full object-contain absolute  bottom-0 z-6 right-0 scale-75"
-      />
+      /> */}
+      <Animation />
 
       <div className="container mx-auto flex flex-col justify-center items-start gap-[4rem] h-full z-[200]">
         <div className="z-10">

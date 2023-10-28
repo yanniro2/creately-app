@@ -28,7 +28,7 @@ const Card = () => {
         {card.map((data, index) => (
           <div
             key={index}
-            className="w-1/3 h-full flex flex-col gap-[1rem] justify-between py-[1rem]">
+            className="w-1/3 h-full flex flex-col gap-[1rem] items-start justify-between py-[2rem]">
             <Image
               src={data.imgUrl}
               width={200}
