@@ -49,3 +49,42 @@ body {
   @apply px-6 py-2 bg-dark w-max hover:bg-blue-500 transition;
 }
 
+
+.bouneIcon-one {
+  animation: bonusOne 2.5s ease-in-out 1s infinite !important;
+}
+
+.bouneIcon-two {
+  animation: bonusOne 2s ease-in-out 1s infinite !important;
+}
+
+.rotateIcon-one {
+    transform-origin: 50% 50%;
+      transform-box: fill-box !important;
+  animation: rotateOne 2s linear infinite;
+  /* animation: rotateOne 2s ease-in-out 1s infinite !important; */
+}
+
+
+
+@keyframes bonusOne {
+  0% {
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(10%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateOne {
+  0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
