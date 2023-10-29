@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 
+
+
 body {
   @apply w-screen h-full text-dark bg-white;
 }
