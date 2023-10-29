@@ -23,8 +23,8 @@ const Card = () => {
     },
   ];
   return (
-    <section className="w-full h-auto md:h-[60vh] px-4 md:px-0">
-      <div className="container mx-auto flex flex-col md:flex-row lg:gap-4 md:gap-8 justify-center items-center py-4 md:py-8 gap-[1rem]">
+    <section className="w-full h-auto md:h-[70vh] px-4 md:px-0">
+      <div className="container mx-auto flex flex-col md:flex-row lg:gap-4 md:gap-8 justify-center items-center h-full  md:py-8 gap-[1rem] pt-[10rem]">
         {card.map((data, index) => (
           <div
             key={index}
