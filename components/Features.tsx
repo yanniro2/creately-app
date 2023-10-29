@@ -36,7 +36,7 @@ export default async function Page() {
     listItem: item.entry.list as ListItem[],
   }));
   return (
-    <section className="w-screen lg:h-[60vh] h-full">
+    <section className="w-screen lg:h-[70vh] h-full">
       <Category category={category} />
     </section>
   );
