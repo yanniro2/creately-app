@@ -1,16 +1,7 @@
 import React from "react";
-import Image from "next/image";
 const Animation = () => {
   return (
-    <div className="w-screen h-screen absolute">
-      {/* <Image
-        src="/Assets/animation_vector.svg"
-        width={800}
-        height={800}
-        alt="img bg"
-        className="w-auto h-full object-contain absolute  bottom-0 z-6 right-0 scale-75"
-      /> */}
-
+    <div className="w-screen h-screen absolute hidden lg:block">
       <svg
         viewBox="0 0 432.28 401.95"
         xmlns="http://www.w3.org/2000/svg"
