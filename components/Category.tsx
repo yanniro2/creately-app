@@ -32,7 +32,7 @@ const Category: React.FC<CategoryProps> = ({ category }) => {
 
   return (
     <div className="lg:container mx-auto h-full flex flex-col md:flex-row w-full p-3 gap-[1rem] md:gap-0">
-      <div className="w-full md:w-1/4  md:h-full border-1 border-primary rounded flex flex-col  lg:p-0 h-screen">
+      <div className="w-full md:w-1/4  md:h-full h-full border-1 border-primary rounded flex flex-col  lg:p-0 lg:h-full">
         {category.map((dataItem) => (
           <div
             key={dataItem.index}
