@@ -7,6 +7,7 @@ interface CategoryData {
   label: string;
   slug: string;
   dec: string;
+  parah: string; // Add the parah property to the interface
   listItem: ListItem[]; // Adjust this based on the actual return type
 }
 
@@ -24,14 +25,14 @@ const Category: React.FC<CategoryProps> = ({ category }) => {
   const [data, setData] = useState(category[0]);
   const [value, setValue] = useState(0);
 
-  const handleClick = (message: any, value: number) => {
+  const handleClick = (message: CategoryData, value: number) => {
     setData(message); // Update the data state with the appropriate message
     setValue(value);
   };
 
   return (
-    <div className="container mx-auto h-full flex">
-      <div className="w-1/4 h-full border-[1px]  rounded flex flex-col">
+    <div className="lg:container mx-auto h-full flex flex-col md:flex-row w-full p-3 gap-[1rem] md:gap-0">
+      <div className="w-full md:w-1/4  md:h-full border-1 border-primary rounded flex flex-col  lg:p-0 h-screen">
         {category.map((dataItem) => (
           <div
             key={dataItem.index}
@@ -45,7 +46,7 @@ const Category: React.FC<CategoryProps> = ({ category }) => {
           </div>
         ))}
       </div>
-      <div className="w-3/4 h-full border-[1px] border-primary rounded p-5">
+      <div className="w-full md:w-3/4 md:h-full h-full lg:h-full border-[1px] border-primary rounded  p-5">
         <Message data={data} /> {/* Pass the data object directly */}
       </div>
     </div>

@@ -21,7 +21,7 @@ interface MessageProps {
 
 const Message: React.FC<MessageProps> = ({ data }) => {
   return (
-    <div className="flex flex-col gap-[1rem]">
+    <div className="w-full h-full flex flex-col gap-[1rem]">
       <h1 className="h3 ">{data.label}</h1>
       <p className="p-body">{data.dec}</p>
 
