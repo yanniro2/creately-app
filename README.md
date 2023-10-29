@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 
 -- Pendding
-1- SVG to Animation
+1- Mobile responsie
 2- Pages (Product , Pricing, SignUp)
 
 First, run the development server:
