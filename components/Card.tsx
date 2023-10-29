@@ -23,12 +23,12 @@ const Card = () => {
     },
   ];
   return (
-    <section className="w-screen h-[60vh]">
-      <div className="container mx-auto h-full flex gap-[3rem] justify-center items-center py-[2rem]">
+    <section className="w-full h-auto md:h-[60vh] px-4 md:px-0">
+      <div className="container mx-auto flex flex-col md:flex-row lg:gap-4 md:gap-8 justify-center items-center py-4 md:py-8 gap-[1rem]">
         {card.map((data, index) => (
           <div
             key={index}
-            className="w-1/3 h-full flex flex-col gap-[1rem] items-start justify-between py-[2rem]">
+            className="w-full md:w-1/3 flex flex-col gap-4 items-center md:items-start">
             <Image
               src={data.imgUrl}
               width={200}
@@ -38,7 +38,7 @@ const Card = () => {
             />
             <h1 className="h3">{data.label}</h1>
 
-            <p className="p-body">{data.details}</p>
+            <p className="p-body lg:text-left text-center">{data.details}</p>
 
             <button className="btn btn-3 ">get started</button>
           </div>
