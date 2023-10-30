@@ -27,7 +27,9 @@ const Header = () => {
 
           <button
             className="text-black focus:outline-none sm:block lg:hidden"
-            onClick={() => setIsMobile(() => !isMobile)}>
+            onClick={() => setIsMobile(() => !isMobile)}
+            aria-label="Toggle Mobile Menu" // Add an appropriate accessible name here
+          >
             <svg
               className="h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"

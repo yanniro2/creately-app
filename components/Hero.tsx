@@ -24,7 +24,7 @@ const Hero = () => {
 
       <div className="container mx-auto flex flex-col justify-center items-center md:items-start gap-8 md:gap-16 h-screen relative z-10">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl font-bold">
             Your Visual Collaboration Workspace
           </h1>
           <h2 className="text-lg md:text-2xl mt-4 md:mt-6">
