@@ -36,7 +36,9 @@ const Hero = () => {
           {sections.map((data, index) => (
             <div key={index} className="flex items-center gap-4 md:gap-8">
               <Image src={data.icon} width={23} height={23} alt="icon img" />
-              <div className="text-sm md:text-base">{data.label}</div>
+              <div className="text-sm md:text-base" role="dialog">
+                {data.label}
+              </div>
             </div>
           ))}
         </div>

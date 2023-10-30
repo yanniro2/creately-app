@@ -23,7 +23,9 @@ const Message: React.FC<MessageProps> = ({ data }) => {
   return (
     <div className="w-full h-full flex flex-col gap-[1rem]">
       <h1 className="h3 ">{data.label}</h1>
-      <p className="p-body">{data.dec}</p>
+      <p aria-hidden="true" className="p-body">
+        {data.dec}
+      </p>
 
       {data.listItem?.map((item, index) => (
         <div key={index} className="flex items-start gap-[1rem] justify-start">
@@ -32,13 +34,19 @@ const Message: React.FC<MessageProps> = ({ data }) => {
               item.draft ? "bg-disabled" : "bg-dark"
             }`}></div>
           <div className={`${item.draft ? "text-disabled" : "text-dark"}`}>
-            <p className="text-[14px] font-regular">{item.name}</p>
-            <p className="p-body">{item.details}</p>
+            <p aria-hidden="true" className="text-[14px] font-regular">
+              {item.name}
+            </p>
+            <p aria-hidden="true" className="p-body">
+              {item.details}
+            </p>
           </div>
         </div>
       ))}
 
-      <p className="p-body">{data.parah}</p>
+      <p aria-hidden="true" className="p-body">
+        {data.parah}
+      </p>
     </div>
   );
 };

@@ -11,7 +11,9 @@ const ProductPage: React.FC = () => {
       {/* Product Description */}
       <section className="p-8 ">
         <h2 className="text-3xl font-bold text-center mb-4">Product Name</h2>
-        <p className="text-center mb-8">Product Description goes here.</p>
+        <p aria-hidden="true" className="text-center mb-8">
+          Product Description goes here.
+        </p>
 
         {/* Product Image */}
         <div className="flex justify-center mb-8">
@@ -38,7 +40,9 @@ const ProductPage: React.FC = () => {
         {/* Pricing Section */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold">Pricing</h2>
-          <p className="text-lg">Starting from $X.XX</p>
+          <p aria-hidden="true" className="text-lg">
+            Starting from $X.XX
+          </p>
           <button className="bg-primary text-white px-4 py-2 rounded mt-4 hover:bg-hover">
             Buy Now
           </button>
@@ -47,7 +51,7 @@ const ProductPage: React.FC = () => {
         {/* Additional Information Section */}
         <div className="mb-8">
           <h2 className="text-2xl font-bold">Additional Information</h2>
-          <p className="text-lg">
+          <p aria-hidden="true" className="text-lg">
             More information about the product goes here.
           </p>
         </div>
@@ -55,7 +59,7 @@ const ProductPage: React.FC = () => {
         {/* Call to Action Section */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold">Ready to get started?</h2>
-          <p className="text-lg">
+          <p aria-hidden="true" className="text-lg">
             Start using our product today and see the difference!
           </p>
           <button className="bg-primary text-white px-4 py-2 rounded mt-4 hover:bg-hover">

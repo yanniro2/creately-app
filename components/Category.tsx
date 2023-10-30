@@ -39,10 +39,13 @@ const Category: React.FC<CategoryProps> = ({ category }) => {
             className={`w-full h-1/3 border-[1px] border-primary p-5 flex flex-col gap-[1rem] cursor-pointer border-r-[5px] rounded-none  ${
               dataItem.index === value ? "border-r-primary" : "border-r-light"
             }`}
+            role="button"
             onClick={() => handleClick(dataItem, dataItem.index)} // Pass data.label as the message
           >
             <h1 className="h3 ">{dataItem.label}</h1>
-            <p className="p-body">{dataItem.dec}</p>
+            <p aria-hidden="true" className="p-body">
+              {dataItem.dec}
+            </p>
           </div>
         ))}
       </div>
