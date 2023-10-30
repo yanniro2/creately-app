@@ -33,7 +33,6 @@ const ProductPage: React.FC = () => {
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
-           
           </ul>
         </div>
 
@@ -62,7 +61,7 @@ const ProductPage: React.FC = () => {
           <p aria-hidden="true" className="text-lg">
             Start using our product today and see the difference!
           </p>
-          <button className="bg-primary text-white px-4 py-2 rounded mt-4 hover:bg-hover">
+          <button className="bg-primary text-white px-4 py-2 rounded mt-4 hover:bg-hover w-max">
             Get Started
           </button>
         </div>

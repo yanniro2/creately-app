@@ -54,12 +54,10 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <button className="btn btn-1 w-max">
-                <Link href="/signup" className="w-full h-full">
-                  Sign Up
-                </Link>
-              </button>
+            <li className="btn btn-1 w-max">
+              <Link href="/signup" className="w-full h-full">
+                Sign Up
+              </Link>
             </li>
           </ul>
         </div>
