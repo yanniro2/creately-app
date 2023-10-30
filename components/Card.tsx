@@ -38,9 +38,7 @@ const Card = () => {
             />
             <h1 className="h3">{data.label}</h1>
 
-            <p aria-hidden="true" className="p-body lg:text-left text-center">
-              {data.details}
-            </p>
+            <p className="p-body lg:text-left text-center">{data.details}</p>
 
             <button className="btn btn-3 ">get started</button>
           </div>

@@ -33,7 +33,7 @@ const ProductPage: React.FC = () => {
             <li>Feature 1</li>
             <li>Feature 2</li>
             <li>Feature 3</li>
-            {/* Add more features here */}
+           
           </ul>
         </div>
 

@@ -46,7 +46,7 @@ const Header = () => {
             {links.map((link) => (
               <li key={link.href}>
                 <Link
-                  href={link.href}
+                  href={link.href} // Assuming the 'to' prop is used for navigation in React Router
                   className={`${
                     pathName === link.href ? "link-active" : "link"
                   }`}>
@@ -54,12 +54,13 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-
-            <button className="btn btn-1 w-max">
-              <Link href="/signup" className="w-full h-full">
-                sign up
-              </Link>
-            </button>
+            <li>
+              <button className="btn btn-1 w-max">
+                <Link href="/signup" className="w-full h-full">
+                  Sign Up
+                </Link>
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
