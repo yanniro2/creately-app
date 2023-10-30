@@ -38,18 +38,18 @@ body {
 }
 
 .btn {
-  @apply bg-primary  rounded text-white capitalize font-normal hover:bg-hover;
+  @apply bg-primary  rounded text-white capitalize font-normal hover:bg-hover cursor-pointer;
 }
 
 .btn-1 {
-  @apply px-4 py-2;
+  @apply px-4 py-2 cursor-pointer;
 }
 
 .btn-2 {
-  @apply py-[1rem] px-[4rem] ;
+  @apply py-[1rem] px-[4rem] cursor-pointer ;
 }
 .btn-3 {
-  @apply px-6 py-2 bg-dark w-max hover:bg-blue-500 transition;
+  @apply px-6 py-2 bg-dark w-max hover:bg-blue-500 transition cursor-pointer;
 }
 
 

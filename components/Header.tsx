@@ -53,9 +53,11 @@ const Header = () => {
               </li>
             ))}
 
-            <li>
-              <button className="btn btn-1 w-max">sign up</button>
-            </li>
+            <button className="btn btn-1 w-max">
+              <Link href="/signup" className="w-full h-full">
+                sign up
+              </Link>
+            </button>
           </ul>
         </div>
       </nav>
@@ -74,7 +76,11 @@ const Header = () => {
               </li>
             ))}
             <li className="my-2">
-              <button className="btn btn-1">sign up</button>
+              <button className="btn btn-1 w-max">
+                <Link href="/signup" className="w-full h-full">
+                  sign up
+                </Link>
+              </button>
             </li>
           </ul>
         </div>
