@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className="w-full h-auto fixed top-0 left-0 z-50 bg-white lg:p-5">
       <nav className="container mx-auto flex flex-col md:flex-row items-center justify-between p-4 md:p-0">
-        <div className="flex items-center justify-between w-full md:w-auto">
+        <div className="flex items-center justify-between w-full md:p-3">
           <Link href={"/"}>
             <Image
               src="/Assets/creately_logo.svg"
@@ -54,13 +54,13 @@ const Header = () => {
             ))}
 
             <li>
-              <button className="btn btn-1">sign up</button>
+              <button className="btn btn-1 w-max">sign up</button>
             </li>
           </ul>
         </div>
       </nav>
       {isMobile && (
-        <div className="md:hidden w-full">
+        <div className="lg:hidden w-full">
           <ul className="flex flex-col items-center justify-center mt-4">
             {links.map((link) => (
               <li key={link.href} className="my-2">
